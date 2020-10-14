@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
   const page = await browser.newPage();
   await page.goto('https://www.mtvema.com/pt-br/vota/');
   
-  console.log('----------------------------- START -----------------------------')
+  console.log('----------------------------- START IN 6s -----------------------------')
   try {
     setInterval(async () => {
       await page.waitForSelector('button[class="elements-accordion-components-item-styles_button_Nae_sr9iGBxv0mK2bG9iD sc-bZQynM etYaFo"]');
